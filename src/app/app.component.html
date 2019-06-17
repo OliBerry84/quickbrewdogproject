@@ -1,21 +1,57 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-light bg-dark sticky-top nav-fill">
+    <img class="logo image-fluid" src="../assets/images/logo.png" alt="brewdog logo">
 
-<router-outlet></router-outlet>
+    
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle"
+        type="button" id="dropdownMenu1" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">Beers</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <a class="dropdown-item" href="#!">Search the Library</a>
+            <a class="dropdown-item" href="#!">Random</a>
+        </div>
+    </div>
+
+
+    <h3 class="nav-header">Community</h3>
+    <h3 class="nav-header">Locations</h3>
+    <h3 class="nav-header">Shop</h3>
+    <img class="logo image-fluid" src="../assets/images/logo.png" alt="brewdog logo">
+</nav>
+
+
+<!-- <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle"
+                type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <a class="dropdown-item" href="#!">Action</a>
+          <a class="dropdown-item" href="#!">Another action</a>
+        </div>
+      </div> -->
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row component" *ngFor="let beer of listbeers">
+        <div class="col-12 col-sm-4 align-self-center">
+            <img class="image-fluid beerimg" src="{{beer.image_url}}" alt="">
+        </div>
+        <div class="col-12 col-sm-8 beerdesc align-self-center">
+            <h1 class="text-uppercase font-weight-bold">{{beer.name}}</h1>
+            <h3 class="text-monospace">({{beer.tagline}})</h3>
+            <hr>
+            <h4 class="text-monospace">{{beer.description}}</h4>
+            <hr>
+            <h4 class="text-monospace">Best served with {{beer.food_pairing}}</h4>
+            <hr>
+            <h4 class="text-monospace">{{beer.abv}}% ABV</h4>
+        </div>
+        <hr>
+    </div>
+</div>

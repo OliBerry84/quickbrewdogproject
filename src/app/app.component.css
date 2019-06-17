@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
+.navbar {
+    border-bottom: 1px solid black;
+    box-shadow: 0 6px 4px -4px black;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-header{
+    font-size: 50px;
+    color: #e2e2e2;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Trade Winds', cursive;
+}
+
+.beerdesc {
+    text-align: center;
+}
+
+.component {
+    margin: 8rem 0 8rem 0;
+}
+
+.beerimg {
+    margin-right: 2rem;
+}
