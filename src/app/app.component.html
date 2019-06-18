@@ -1,7 +1,6 @@
-<nav class="navbar navbar-light bg-dark sticky-top nav-fill">
+<nav class="navbar navbar-light bg-dark sticky-top">
     <img class="logo image-fluid" src="../assets/images/logo.png" alt="brewdog logo">
 
-    
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle"
         type="button" id="dropdownMenu1" data-toggle="dropdown"
@@ -10,32 +9,33 @@
             <a class="dropdown-item" href="#!">Search the Library</a>
             <a class="dropdown-item" href="#!">Random</a>
         </div>
-    </div>
 
-
-    <h3 class="nav-header">Community</h3>
-    <h3 class="nav-header">Locations</h3>
-    <h3 class="nav-header">Shop</h3>
-    <img class="logo image-fluid" src="../assets/images/logo.png" alt="brewdog logo">
-</nav>
-
-
-<!-- <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle"
-                type="button" id="dropdownMenu1" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <a class="dropdown-item" href="#!">Action</a>
-          <a class="dropdown-item" href="#!">Another action</a>
+        type="button" id="dropdownMenu2" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">Community</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <a class="dropdown-item" href="#!">Fans Forum</a>
+            <a class="dropdown-item" href="#!">Taste Tests</a>
         </div>
-      </div> -->
-
-
-
-
-
+    
+    
+        <button class="btn btn-secondary dropdown-toggle"
+        type="button" id="dropdownMenu3" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">Locations</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+            <a class="dropdown-item" href="#!">UK</a>
+            <a class="dropdown-item" href="#!">USA</a>
+        </div>
+    
+        <button class="btn btn-secondary dropdown-toggle"
+        type="button" id="dropdownMenu4" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">Shop</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+            <a class="dropdown-item" href="#!">Beer Ingredients/Equipment</a>
+            <a class="dropdown-item" href="#!">Brewdog Clothing Range</a>
+        </div>
+    </div>
+</nav>
 
 <div class="container-fluid">
     <div class="row component" *ngFor="let beer of listbeers">
