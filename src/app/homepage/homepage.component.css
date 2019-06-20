@@ -1,0 +1,16 @@
+.container {
+    margin-top: 1rem;
+}
+
+.para {
+    text-align: center;
+    font-size: 25px;
+}
+
+img {
+    border: 3px dashed black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}

@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row component" *ngFor="let beer of listbeers">
+      <div class="col-12 col-sm-4 align-self-center">
+          <img class="image-fluid beerimg" src="{{beer.image_url}}" alt="">
+      </div>
+      <div class="col-12 col-sm-8 beerdesc align-self-center">
+          <h1 class="text-uppercase font-weight-bold">{{beer.name}}</h1>
+          <h3 class="text-monospace">({{beer.tagline}})</h3>
+          <hr>
+          <h4 class="text-monospace">{{beer.description}}</h4>
+          <hr>
+          <h4 class="text-monospace">Best served with {{beer.food_pairing}}</h4>
+          <hr>
+          <h4 class="text-monospace">{{beer.abv}}% ABV</h4>
+      </div>
+      <hr>
+  </div>
+</div>
