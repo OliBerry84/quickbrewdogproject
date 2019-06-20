@@ -1,12 +1,11 @@
-import { AppComponent } from './app.component';
-import { HomepageComponent } from './homepage/homepage.component';
 import { BeerlistComponent } from './beerlist/beerlist.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomepageComponent } from './homepage/homepage.component';
 
 const routes: Routes = [
   { path: 'beerlist', component: BeerlistComponent },
-  { path: 'homepage', component: HomepageComponent }
+  { path: '', component: HomepageComponent }
 ];
 
 @NgModule({
