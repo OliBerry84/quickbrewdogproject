@@ -9,6 +9,8 @@ import { HttpComponent } from './http/http.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BeerlistComponent } from './beerlist/beerlist.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { BeertableComponent } from './beertable/beertable.component';
+import { SorterService } from './services/sorter.service';
 
 @NgModule({
   declarations: [
@@ -16,14 +18,15 @@ import { HomepageComponent } from './homepage/homepage.component';
     HttpComponent,
     NavbarComponent,
     BeerlistComponent,
-    HomepageComponent
+    HomepageComponent,
+    BeertableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [BrewdogApiService],
+  providers: [BrewdogApiService, SorterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
